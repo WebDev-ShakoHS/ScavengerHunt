@@ -1,0 +1,35 @@
+<html>
+<body>
+
+<center><h1>Cyber Security Challenge:</h1></center>
+<center><h2>Click on the button below for the next step in the S and T Scavenger Hunt!</h2></center>
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password','');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "1234") {
+alert('Good work, Science and Tech student!');
+window.open('https://docs.google.com/spreadsheets/d/13sEn1U7FwB6187we5Siez2PBsHbDg3oI41mvvATIy4c/edit?usp=sharing');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('IncorrectÑPlease Look for Clues','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Click here and enter the 4-digit password" onClick="passWord()">
+</FORM>
+</CENTER>
+
+</body>
+</html>
